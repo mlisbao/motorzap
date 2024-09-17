@@ -1,4 +1,1 @@
 streamlit
-pywhatkit
-webbrowser
-pyautogui
