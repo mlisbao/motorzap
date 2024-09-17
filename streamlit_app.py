@@ -8,8 +8,8 @@ submit = st.button("Enter")
 
 i=1
 if submit:
-phone = phonelist.split(',')
+      phone = phonelist.split(',')
 for each in phone:
-py.sendwhatmsg("+55"+each,message,time.hour,(time.minute+i),10)
-i=i+1
+      py.sendwhatmsg("+55"+each,message,time.hour,(time.minute+i),10)
+      i=i+1
 st.success("Message Sent!")
