@@ -3,10 +3,7 @@ from twilio.rest import Client
 
 # Função para enviar mensagem no WhatsApp
 def send_whatsapp_message(to_number, message_body):
-    account_sid = st.secrets["account_sid"]  # Substitua pelo seu Account SID
-    auth_token = st.secrets["b819f29e814194d7fc965ed21f4745ef"]    # Substitua pelo seu Auth Token
-    client = Client(account_sid, auth_token)
-
+    client = Client(st.secrets["account_sid"], st.secrets["auth_token"])
     from_whatsapp_number = 'whatsapp:+14155238886'  # Número WhatsApp Twilio
     to_whatsapp_number = f'whatsapp:{to_number}'    # Número para o qual deseja enviar
 
